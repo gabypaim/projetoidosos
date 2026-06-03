@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/cacapalavras.css">
+    <title>Cérebro Ativo</title>
+</head>
+<body>
+    <a id="btn-voltar" href="index.html">Voltar ao Menu</a>
+<main>
+    <div class="container" id="menu">
+    <h1>Escolha um Tema</h1>
+    <button class="tema-btn" onclick="iniciarJogo('animais')">🐾 Animais</button>
+    <button class="tema-btn" onclick="iniciarJogo('cores')">🎨 Cores</button>
+    <button class="tema-btn" onclick="iniciarJogo('objetos')">🧸 Objetos</button>
+    <button class="tema-btn" onclick="iniciarJogo('paises')">🌍 Países</button>
+  </div>
+</main>
+  <div class="container jogo" id="jogo">
+    <h1>Encontre as palavras</h1>
+    <div class="grade" id="grade"></div>
+    <div class="palavras" id="lista-palavras"></div>
+    <div class="botoes-jogo">
+      <button onclick="reiniciarJogo()">Novo Jogo</button>
+      <button onclick="voltarMenu()">Voltar ao Tema</button>
+    </div>
+    <div id="mensagem-final">🎉 Parabéns! Você encontrou todas as palavras! 🎉</div>
+    <audio id="audio-acerto" src="https://www.soundjay.com/buttons/sounds/button-3.mp3"></audio>
+
+     <footer>
+    <p> &copy; 2025 Criado por </p>
+  </footer>
+
+  <script src="/assets/scripts/cacapalavras.js"></script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+* {
+      box-sizing: border-box;
+    }
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: #d6f8b8;
+  color: #1a1a1a;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+      
+}
+
+footer {
+  background-color: #d6f8b8;
+  color: #5c4a36;
+  font-size: 1rem;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  border-top: 2px solid #e0d5c1;
+}
+
+main {
+  flex: 1; /* Faz o conteúdo ocupar o espaço restante */
+  margin-top: 10%;
+}
+  
+.container {
+    padding: 20px;
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.tema-btn {
+    font-size: 1.5em;
+    padding: 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 12px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    width: 90%;
+    max-width: 300px;
+    transition: background-color 0.3s;
+}
+.tema-btn:hover {
+    background-color: #45a049;
+}
+.jogo {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.grade {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+    user-select: none;
+    width: 100%;
+    max-width: 420px; /* Limita o tamanho em telas grandes */
+    margin: 0 auto;
+}
+.letra {
+    aspect-ratio: 1 / 1; /* Mantém quadrado */
+    font-size: 1.5em;
+    background-color: #e0f7fa;
+    border: 2px solid #00796b;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ocupa a célula inteira */
+}
+.letra.selecionada {
+    background-color: #ffeb3b;
+}
+.letra.encontrada {
+    background-color: #aed581;
+    border-color: #33691e;
+}
+.palavras {
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+.botoes-jogo button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#mensagem-final {
+  display: none;
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2em;
+  background-color: #fff8e1;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  animation: cair-do-topo 1.2s ease-out forwards;
+}
+
+@keyframes cair-do-topo {
+  0% {
+    top: -100px;
+    opacity: 0;
+  }
+  100% {
+    top: 30%;
+    opacity: 1;
+  }
+}
+
+@keyframes cair {
+    0% { opacity: 0; transform: translateY(-200px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+#btn-voltar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #45a049;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 1000; /* Para garantir que fique acima de outros elementos */
+  transition: all 0.3s ease;
+}
+
+#btn-voltar:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
