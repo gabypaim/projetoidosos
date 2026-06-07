@@ -14,6 +14,7 @@ Este projeto foi desenvolvido pelos acadêmicos:
 Agradecemos à professora do Senac pela orientação, apoio e acompanhamento durante todas as etapas de desenvolvimento do projeto, contribuindo significativamente para a realização deste trabalho.
 
 ### Orientação
+- Professor Vinicius Sonda
 - Professora do Senac
 
 ### Instituição
