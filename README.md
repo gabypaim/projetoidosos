@@ -1,6 +1,6 @@
 # Projeto Cérebro Ativo
 
-O Projeto Cérebro Ativo foi desenvolvido como trabalho acadêmico com o objetivo de
+O Projeto Cérebro Ativo foi desenvolvido como trabalho acadêmico com o objetivo de melhorar a cognição dos idosos auxiliando no combate de doenças como alzhaimer
 
 Este projeto foi desenvolvido pelos acadêmicos:
 
