@@ -8,7 +8,7 @@ Este projeto foi desenvolvido pelos acadêmicos:
 - Nicole Bottinger
 - Gabriel Maganin
 - Franco Maurente
-- João
+- João Victor Studier
 
 ## Créditos
 Agradecemos à professora do Senac pela orientação, apoio e acompanhamento durante todas as etapas de desenvolvimento do projeto, contribuindo significativamente para a realização deste trabalho.
